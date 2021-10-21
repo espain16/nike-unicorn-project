@@ -1,9 +1,12 @@
-import './App.css';
+import './styles/styles.css';
+import Search from './components/Search';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <div className="navigation">
+        <Search/>
+      </div>
     </div>
   );
 }
