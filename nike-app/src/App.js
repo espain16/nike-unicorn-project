@@ -3,6 +3,8 @@ import Search from './components/Search';
 import Logo from './components/Logo';
 import WomenBtn from './components/WomenBtn';
 import MenBtn from './components/MenBtn';
+import ShoppingCart from './components/ShoppingCart';
+import Favorite from './components/Favorite';
 
 function App() {
   return (
@@ -13,7 +15,11 @@ function App() {
           <WomenBtn/>
           <MenBtn/>
           <Search/>
+          <Favorite/>
+          <ShoppingCart/>
         </div>
+      </section>
+      <section className="women" id="women">
 
       </section>
     </div>
