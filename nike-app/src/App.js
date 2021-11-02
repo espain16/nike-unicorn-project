@@ -1,3 +1,5 @@
+import React from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import './styles/styles.css';
 import Search from './components/Search';
 import Logo from './components/Logo';
@@ -6,23 +8,26 @@ import MenBtn from './components/MenBtn';
 import ShoppingCart from './components/ShoppingCart';
 import Favorite from './components/Favorite';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <section className="landingPage">
-        <div className="navigation">
-          <Logo/>
-          <WomenBtn/>
-          <MenBtn/>
-          <Search/>
-          <Favorite/>
-          <ShoppingCart/>
-        </div>
-      </section>
-      <section className="women" id="women">
+    <Router>
+      <div className="App">
+        <section className="landingPage">
+          <div className="navigation">
+            <Logo/>
+            <WomenBtn/>
+            <MenBtn/>
+            <Search/>
+            <Favorite/>
+            <ShoppingCart/>
+          </div>
+        </section>
+        <section className="women" id="women-section">
 
-      </section>
-    </div>
+        </section>
+        
+      </div>
+    </Router>
   );
 }
 

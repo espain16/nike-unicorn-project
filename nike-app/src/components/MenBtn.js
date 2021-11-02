@@ -1,9 +1,10 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const MenBtn = () => {
   return(
     <div>
-      <button>Men</button>
+      <HashLink to="#men-section">Men</HashLink>
     </div>
   )
 }
